@@ -23,7 +23,9 @@ Build a production version with `npm run build`; preview it with `npm run previe
 
 ## Deploy
 
-Import this folder into Vercel or Netlify. Use `npm run build` as the build command and `dist` as the publish/output directory. The project is a static single-page site and does not need environment variables.
+GitHub Pages deployment is configured in `.github/workflows/deploy-pages.yml`. Pushes to `main` build the site and publish the `dist` directory. In the repository, open **Settings → Pages** and set the build and deployment source to **GitHub Actions**. Once the workflow succeeds, the site is available at `https://nikhilkokatla.github.io/tis-homepage/`.
+
+The site is static and does not need environment variables.
 
 ## Project structure
 
